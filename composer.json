@@ -1,0 +1,24 @@
+{
+    "name": "yousef-aman/prevent-deletion",
+    "description": "A package to prevent deletion of models with related records.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "YousefAman\\PreventDeletion\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yousef",
+            "email": "superyousef1999@gmail.com"
+        }
+    ],
+    "require": {},
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/yousef-aman/prevent-deletion.git"
+        }
+    ]
+}
