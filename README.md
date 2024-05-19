@@ -44,7 +44,7 @@ Use the `PreventDeletionIfHasRelations` trait in your models. Define any specifi
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Traits\PreventDeletionIfHasRelations;
+use YousefAman\PreventDeletion\Traits\PreventDeletionIfHasRelations;
 
 class User extends Model
 {
@@ -97,7 +97,7 @@ class User extends Model
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Traits\PreventDeletionIfHasRelations;
+use YousefAman\PreventDeletion\Traits\PreventDeletionIfHasRelations;
 
 class Blog extends Model
 {
@@ -143,7 +143,7 @@ Handle the exception in your controller to provide a user-friendly message:
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Exceptions\PreventDeletionException;
+use YousefAman\PreventDeletion\Exceptions\PreventDeletionException;
 use Exception;
 use Illuminate\Http\Request;
 
@@ -173,7 +173,7 @@ class UserController extends Controller
 The package uses a custom `PreventDeletionException` class to handle exceptions specifically related to deletion prevention. This makes it easier to catch and handle these exceptions separately from other types of exceptions.
 
 ```php
-namespace App\Exceptions;
+namespace YousefAman\PreventDeletion\Exceptions;
 
 use Exception;
 
